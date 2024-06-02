@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1; /* Ensure canvas is below the text */
+}
+
+#centerText {
+    color: #0F0;
+    font-family: monospace;
+    font-size: 48px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2; /* Ensure text is above the canvas */
+    background-color: rgba(0, 0, 0, 0.75); /* Add semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+}
